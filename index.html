@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Tollymemes🔥</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tollymemes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>🔥 Tfi memes</h1>
-
-    <!-- Search Bar -->
-    <input type="text" id="search" placeholder="Search meme..." onkeyup="searchSounds()">
-
-    <h2>🎵 Sounds</h2>
+    <header>
+        <div class="title-block">
+            <h1>TOLLYMEMES</h1>
+        </div>
+        <div class="search-wrap">
+            <span class="search-icon">🔍︎</span>
+            <input type="text" id="search" placeholder="Search meme..." onkeyup="searchSounds()">
+            <button class="clear-btn" id="clearBtn" onclick="clearSearch()">✕</button>
+        </div>
+    </header>
 
     <div class="container" id="soundContainer"></div>
-    
+
+    <div class="no-results" id="noResults">
+        <span>😢</span>
+        No meme found anna!
+    </div>
 
     <script src="script.js"></script>
-
+    <footer class="footer">
+        Copyright © 2030 Aluvala Sai Shailu Sri - All rights reserved
+    </footer>
 </body>
+
 </html>
